@@ -1,0 +1,39 @@
+Exercise no 1:
+list1=["class","true","amazon","game"]
+list2=["room","caller","prime","center"]
+merge=list(zip(list1,list2))
+print("The zipped list  :",merge)
+
+output:
+The zipped list  : [('class', 'room'), ('true', 'caller'), ('amazon', 'prime'), ('game', 'center')]
+
+Exercise no 2:
+list1=list(range(1,9))
+names=["abi","venu","karthi","keerthi","kamal","kavya","santha","sorna"]
+zipped_list=tuple(zip(list1,names))
+print(zipped_list)
+
+output:
+((1, 'abi'), (2, 'venu'), (3, 'karthi'), (4, 'keerthi'), (5, 'kamal'), (6, 'kavya'), (7, 'satha'), (8, 'sorna'))
+
+Exercise no 3:
+nums=list(range(10,0,-1))
+print("before sorting :",nums)
+nums.sort()
+print("after sorting :",nums)
+
+output:
+before sorting : [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+after sorting : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> 
+
+Exercise no 4:
+list1=list(range(1,10))
+even_number=list(filter((lambda x:x%2==0),list1))
+print(even_number)
+odd_number=list(filter((lambda x:x%2!=0),list1))
+print(odd_number)
+
+output:
+[2, 4, 6, 8]
+[1, 3, 5, 7, 9]
