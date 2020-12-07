@@ -1,0 +1,66 @@
+Exercise no 1:
+import re
+def is_allowed_specific_char(string):
+    charRe = re.compile(r'[^a-zA-Z0-9.]')
+    string = charRe.search(string)
+    return not bool(string)
+print(is_allowed_specific_char("ABCDEFabcdef123450")) 
+print(is_allowed_specific_char("*&%@#!}{"))
+
+output:
+True
+False
+
+Exercise no 2:
+import re
+def word(text):
+    patterns = '\w*ab.\w*'
+    if re.search(patterns,text):
+        return ('Found a match!')
+    else:
+        return ('Not matched!')
+print(word("fabulous "))
+
+output:
+Found a match
+
+Exercise no 3:
+import re
+def number(word):
+    text = re.compile(r".*[0-9]$")
+    if text.match(word):
+        return ('Found number at end of string')
+    else:
+        return ('not found')
+print(number("Covid19"))
+
+output:
+Found number at end of string
+
+Exercise no 4:
+import re
+results = re.finditer(r"([0-9]{1,3})","Exercises number 1, 3, 56, and 999 are important")
+print("Number of length 1 to 3")
+for n in results:
+     print(n.group(0))
+
+output:
+Number of length 1 to 3
+1
+3
+56
+999
+
+Exercise no 5:
+import re
+def caps(word):
+        patterns = '^[A-Z]*$'
+        if re.search(patterns,word):
+                return ('Found a match!')
+        else:
+                return('Not matched!')
+print(caps("HELLO"))
+
+output:
+Found a match!
+
