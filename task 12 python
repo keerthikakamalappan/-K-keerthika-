@@ -1,0 +1,25 @@
+person={}
+person['leo']={'name':'kiki',
+               'address':'tamilnadu',
+               'phn_no':'457686645',
+               'email_id':'None'
+               }
+person['sam']={'name':'sam',
+               'address':'tamilnadu',
+               'phn_no':'457674876',
+               'email_id':'keerthi@gmail.com'
+               }
+person['joe']={'name':'joe',
+               'address':'tamilnadu',
+               'phn_no':'456473636',
+               'email_id':'None'
+               }
+#print(person)
+#print(type(person))
+
+import json
+s= json.dumps(person)
+#print(s)
+
+with open("D:\\data.json","w") as f:
+    f.write(s)
