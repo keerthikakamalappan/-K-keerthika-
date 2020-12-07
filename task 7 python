@@ -1,0 +1,16 @@
+Exercise no 1:
+import mymodule as list
+list.mylist.append(8)
+print(list.mylist)
+
+Exercise no 2:
+import pandas as pd
+
+Exercise no 3:
+import random as r
+num=r.randint(1,100)
+print(x)
+
+Exercise no 4:
+import sys
+sys.path
