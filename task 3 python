@@ -1,0 +1,57 @@
+Python 3.9.0 (tags/v3.9.0:9cf6752, Oct  5 2020, 15:34:40) [MSC v.1927 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+exercise 1
+>>> dict1={'a':100,'b':200}
+>>> dict2={'x':300,'y':200}
+>>> dict=dict1.copy()
+>>> dict.update(dict2)
+>>> print(dict)
+{'a': 100, 'b': 200, 'x': 300, 'y': 200}
+>>>
+exercise 2
+>>> food={'pizza':10,'burger':20,'fries':30,'chicken':40}
+>>> print(food)
+{'pizza': 10, 'burger': 20, 'fries': 30, 'chicken': 40}
+>>> del food['pizza']
+>>> print(food)
+{'burger': 20, 'fries': 30, 'chicken': 40}
+
+
+exercise 3
+keys= ['red', 'green', 'blue']
+values = ['#FF0000','#008000', '#0000FF']
+color_dictionary = dict(zip(keys, values))
+print(color_dictionary)
+{'red': '#FF0000', 'green': '#008000', 'blue': '#0000FF'}
+
+exercise 4
+>>> numbers=set([5,6,7,8,9,11,12])
+>>> print(len(numbers))
+6
+>>>
+
+exercise 5
+>>> sn1={1,2,3,4,5,11}
+>>> sn2={4,5,6,7,8,9}
+>>> print("sets:")
+sets:
+>>> print(set1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'set1' is not defined
+>>> print(sn1)
+{1, 2, 3, 4, 5}
+>>> print(sn2)
+{4, 5, 6, 7, 8}
+>>> print("we have to remove the intersection of a sn2 from sn1 using difference_update():")
+we have to remove the intersection of a sn2 from sn1 using difference_update():
+>>> sn1.difference_update(sn2)
+>>> print(sn1)
+{1, 2, 3}
+>>> sn1={1,2,3,4,5}
+>>> sn2={4,5,6,7,8}
+>>> print("remove the intersection of a sn2 from sn1 using-=operator:")
+remove the intersection of a sn2 from sn1 using-=operator:
+>>> print(sn1-sn2)
+{1, 2, 3}
+>>>
