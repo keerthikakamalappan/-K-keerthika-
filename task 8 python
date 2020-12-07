@@ -1,0 +1,81 @@
+Exercise no 1
+
+#Name error
+try:
+    raise NameError('number')
+except NameError:
+    print("The exception demolished")
+
+#Indexerror
+L=list(range(0,10))
+try:
+    print(L[30])
+except:
+    print("Error handled")
+
+#ZeroDivisionError
+try:
+    c=6/0
+    print(c)
+except:
+    print("The number cannot divide by zero")
+
+
+Exercise no 2:
+
+a=int(input("first integer"))
+b=int(input("second integer"))
+print("Choose the arithmetic function")
+print("1.Addition")
+print("2.Subraction")
+print("3.Multiplication")
+print("4.Division")
+ch=int(input("Enter your choice"))
+try:
+    if (ch == 1):
+        c = a + b
+        print("The addition value is: ",c)
+except:
+    print("Invalid input")
+try:
+    if(ch==2):
+        c=a-b
+    print("The subtraction value is: ",c)
+except:
+    print("Invalid input")
+try:
+    if(ch==3):
+        c=a*b
+    print("The multiplication value is: ",c)
+except:
+    print("Invalid input")
+try:
+    if(ch==4):
+        c=a/b
+    print("The division value is: ",c)
+except:
+    print("Invalid input")
+finally:
+    print("End of program")
+
+Exercise no 3:
+
+try:
+    raise NameError('number')
+except NameError:
+    print("The exception demolished")
+
+Exercise no 4:
+
+Whenever there is no need for error to be handled ,try-except scenario is not required.
+
+Exercise no 5:
+
+while True:
+    try:
+        t=int(input("Enter the number"))
+        print("The entered number is",t)
+        break
+    except:
+        print("Invalid number")
+print("number executed")
