@@ -1,0 +1,41 @@
+Exercise no 1:
+a=lambda b,c:b*c
+print(a(4,4))
+
+output:
+16
+
+Exercise no 2:
+from functools import reduce
+fib_series = lambda n: reduce(lambda x, _: x+[x[-1]+x[-2]],
+                                range(n-2), [0, 1])
+print("\nFibonacci series upto 6:")
+print(fib_series(6))
+
+output:
+Fibonacci series upto 6:
+[0, 1, 1, 2, 3, 5]
+
+Exercise no 3:
+number=list(range(0,10))
+multi=list(map(lambda n:n*2,number))
+print(multi)
+
+output:
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
+Exercise no 4:
+numbers=list(range(1,150))
+div=list(filter(lambda h:h%9==0,numbers))
+print(div)
+
+output:
+[9, 18, 27, 36, 45, 54, 63, 72, 81, 90, 99, 108, 117, 126, 135, 144]
+
+Exercise no 5:
+numbers=list(range(0,25))
+even=list(filter(lambda b:b%2==0,numbers))
+print(even)
+
+output:
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24]
